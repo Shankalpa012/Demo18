@@ -1,0 +1,100 @@
+@mixin landing_content_style {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2.9em;
+
+    h1{
+        font-size: 38px;
+        font-weight: 600;
+        color: $hover_color;
+        text-transform: uppercase;
+        padding: 30px 0px;
+       
+    }
+
+    .landing-offer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2{
+            font-size: 80px;
+            color: white;   
+        } 
+    }
+
+    .btn{
+        margin-top: 50px;
+        background-color: #2879fe;
+        padding: 25px 70px;
+        color: lightcyan;
+        text-align: center;
+        border: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 1.0;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        border-radius:5px;    
+
+        &:hover{
+            background-color: rgb(34, 103,216)    
+        }
+    }
+    
+}
+
+
+.landing-page{
+    margin-top: 8px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/woman.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include landing_content_style;
+}
+
+
+
+
+@media (max-width:1300px){
+    .landing-page{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../img/woman.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        @include landing_content_style;
+    }
+}
+
+.landing-page2{
+    margin-top: 20px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/male.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include landing_content_style;
+}
+
+
+@media (max-width:1300px){
+    .landing-page2{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../img/male.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        @include landing_content_style;
+    }
+}
+
+

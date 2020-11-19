@@ -1,0 +1,45 @@
+
+// declaring all the varibales
+
+$text_color:#191919;
+$hover_color:#2879fe;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Hind', sans-serif;
+    overflow-x: hidden;
+}
+
+@mixin button_style {
+    background-color: #2879fe;
+    padding: 0 25px;
+    height: 50px;
+    color: lightcyan;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.0;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    margin: 5px;
+    border-radius:5px;
+
+
+    &:hover{
+        background-color: rgb(34, 103,216)    
+    }
+}
+
+
+
+@import './header_styles';
+@import './landing_page_style';
+@import './product_list';
+@import './pre_footer';
+@import './footer';

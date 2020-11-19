@@ -1,0 +1,152 @@
+.product-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    overflow: hidden;
+    
+    .product-logo{
+        font-size: 26px;
+        padding-left: 20px;
+        text-transform: uppercase;
+    }
+
+    .product-navbar-list{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999999;
+
+        li{
+            padding: 13px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        li:hover{
+            color: $text-color;
+            cursor: pointer;
+        }
+
+        .active{
+            color: $text-color;
+        }
+    }
+
+    .product-arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+
+        li{
+            padding: 10px 10px;
+            font-size: 30px;
+            
+            .arrow-icon{
+                padding:5px;
+                border-radius: 50%;
+                background-color: #f7f7fa;
+            }
+
+            .arrow-icon:hover{
+                background-color: $hover_color;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+}
+
+
+// this css is for the card card carasoul 
+
+.product-section-container{
+    width:100%;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(6,16.66%);
+    margin: 10px 0px;
+ 
+    .product-items-container{
+        margin: 5px;
+    
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .product-details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            line-height: 30px;
+
+            .product-title{
+                font-size: 18px;
+                color: #999999;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover{
+                    color: $hover_color;
+                    cursor: pointer;
+                }
+            }
+
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+
+                li{
+                    padding:0px 5px ;
+                }
+            }
+
+            .description{
+                font-size: 17px;
+                text-transform: uppercase;
+                letter-spacing: 0.03px;
+                &:hover{
+                    color: $hover_color;
+                }
+            }
+
+            .price{
+                font-size: 19px;
+                font-weight: 600;
+            }
+
+            .btn{
+                display: none;
+                @include button_style;
+            }
+        }
+
+        &:hover{
+            .product-details{
+                margin-top: -100px;
+                transition: 1s ease;
+                position: relative;
+                margin-bottom: 76px;
+                background-color: white;
+                cursor: pointer;
+            }
+            .btn{
+                display: block;
+            }
+        }
+    }    
+}        
+    
+        
+
+
+
+
+

@@ -1,0 +1,21 @@
+.container{
+    
+    display: grid;
+    grid-template-columns: 100%;
+    overflow: hidden;
+    .logo{
+        
+        position: relative;
+        padding: 13px;
+        text-align: center;
+        vertical-align: middle;
+        img{
+            height: 30px;
+        }
+    }
+    
+}
+
+
+
+@import './nav_bar';

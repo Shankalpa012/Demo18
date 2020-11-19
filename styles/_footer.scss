@@ -1,0 +1,121 @@
+.footer-top{
+    background-color: #f5f3f3;
+   .footer-container{ 
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 5em;
+        font-weight: 300;
+    
+        h3{
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-top: 80px;
+            
+        
+        }
+        p{
+            font-size: 16px;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        .footer-login{
+            display: flex;
+            margin-top: 35px;
+        }
+
+        .form{
+            margin-left: 0px;
+            padding: 10px;
+            width: 30vw;
+            border: none;
+            border-radius: 10px 0 0 10px;    
+        }
+
+        .btn{
+            padding: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: #2879fe;
+            font-size: 18px;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            color: snow;
+            
+
+            &:hover{
+                background-color: black;
+                cursor: pointer;
+                transition: 0.7s ease-in-out;
+            }
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            padding: 10px;
+            margin-bottom: 60px;
+
+            li{
+                padding: 0px 10px;
+                font-size: 22px;
+                color: grey;
+                &:hover{
+                    cursor: pointer;
+                    color: black;
+                    transition: 1s ease;
+                }
+            }
+        }
+    }   
+
+}
+
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .footer-logo{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       
+
+        img{
+            max-height:30px ;
+        }
+    
+        p{
+            padding:20px 5px;
+            text-align: center;
+        }
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+            
+        li{
+            padding: 0 5px;
+
+            .logo7{
+                height: 25px;
+            }
+        }
+
+    }
+}
